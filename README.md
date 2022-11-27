@@ -18,7 +18,13 @@ desactiver le venv : "desactivate"
 ajout des 2 requirements 
 django==4.1.3
 djangorestframework==3.14.0
-"pip install -r requirements.txt" (dans l'envrionement activé)
+"pip install -r requirements.txt" (dans l'environement activé)
 création du projet django: "django-admin.py startproject softdesk_project ."
 creation de la 1ere app API: "python manage.py startapp profiles_api"
+ajouter dans les applications du settings.py du django :
+    'rest_framework',
+    'rest_framework.authtoken',
+    'profiles_api',
+pour tester les ajouts, demarrer django: "python manage.py runserver 0.0.0.0:8000", se connecter sur un browser à "http://127.0.0.1:8000/"
+
 
