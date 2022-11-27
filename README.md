@@ -26,5 +26,5 @@ ajouter dans les applications du settings.py du django :
     'rest_framework.authtoken',
     'profiles_api',
 pour tester les ajouts, demarrer django: "python manage.py runserver 0.0.0.0:8000", se connecter sur un browser à "http://127.0.0.1:8000/"
-
+creation de la class & import : class UserProfile(AbstractBaseUser, PermissionsMixin): dans models de profile_api
 
