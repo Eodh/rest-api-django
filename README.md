@@ -29,3 +29,10 @@ pour tester les ajouts, demarrer django: "python manage.py runserver 0.0.0.0:800
 creation de la class & import : class UserProfile(AbstractBaseUser, PermissionsMixin): dans models de profile_api
 add user model manager au meme endroit
 Set Custom user model dans settings : AUTH_USER_MODEL = 'profiles_api.UserProfile'
+///
+pour créer les migrations (et Synchroniser la base de donnée avec les tables du model)
+vagrant up
+vagrant ssh
+cd /vagrant
+source ~/env/bin/activate
+python manage.py makemigrations profiles_api
