@@ -44,3 +44,7 @@ Email: gabriel.thore@gmail.com
 Name: gabriel
 Password: P123
 ///
+Enable django admin in admin 
+et test de django admin '"python manage.py runserver 0.0.0.0:8000"'
+login with superuser account at http://127.0.0.1:8000/admin
+///
