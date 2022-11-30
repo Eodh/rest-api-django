@@ -37,3 +37,10 @@ cd /vagrant
 source ~/env/bin/activate
 python manage.py makemigrations profiles_api
 python manage.py migrate
+///
+Creation superuser 'python manage.py createsuperuser'
+Création superuser : 
+Email: gabriel.thore@gmail.com
+Name: gabriel
+Password: P123
+///
