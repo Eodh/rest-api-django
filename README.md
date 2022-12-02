@@ -48,3 +48,10 @@ Enable django admin in admin
 et test de django admin '"python manage.py runserver 0.0.0.0:8000"'
 login with superuser account at http://127.0.0.1:8000/admin
 ///
+START API PART 
+dans view.py : ajouter les imports necessaires pour créer des API:
+from rest_ framework.view import APIView
+from rest_framework.response import Response
+Créer classes et fonctions get, post, patch, put, delete
+Effectuer la liaison dans urls.py de l'applicaiton master vers urls.py (qu'on crée) dans l'applications Profiles_api
+creation de la liaison entre l urls et la view
