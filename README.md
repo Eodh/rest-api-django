@@ -55,3 +55,4 @@ from rest_framework.response import Response
 Créer classes et fonctions get, post, patch, put, delete
 Effectuer la liaison dans urls.py de l'applicaiton master vers urls.py (qu'on crée) dans l'applications Profiles_api
 creation de la liaison entre l urls et la view
+ajout de la méthode POST
