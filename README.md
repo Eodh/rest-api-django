@@ -56,3 +56,4 @@ Créer classes et fonctions get, post, patch, put, delete
 Effectuer la liaison dans urls.py de l'applicaiton master vers urls.py (qu'on crée) dans l'applications Profiles_api
 creation de la liaison entre l urls et la view
 ajout de la méthode POST
+Add PUT, PATCH and DELETE methods in view
