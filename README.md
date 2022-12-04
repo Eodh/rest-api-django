@@ -70,3 +70,5 @@ test creation de compte :
 "email": "elisa.beau@hotmail.fr",
 "name": "Elisa"
 Password123
+//
+Create permission set permettant de ne modifier que ses propres données
