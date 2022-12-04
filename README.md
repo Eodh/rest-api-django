@@ -61,3 +61,12 @@ Add PUT, PATCH and DELETE methods in view
 Create Viewset API
 add URLs avec router fonction
 Add create, retrieve, update, partial_update and destroy functions
+//
+Create user profile serializer in serializer who see model
+Create profiles ViewSet in view who see model
+Register profile Viewset with the URL router in url
+test creation de compte : 
+"id": 2,
+"email": "elisa.beau@hotmail.fr",
+"name": "Elisa"
+Password123
