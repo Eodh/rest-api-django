@@ -72,3 +72,4 @@ test creation de compte :
 Password123
 //
 Create permission set permettant de ne modifier que ses propres données
+connexion du permission set a la view + Token
