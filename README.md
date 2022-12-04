@@ -79,3 +79,4 @@ Add search profiles feature
 Add login API dans la view
 puis connexion dans l'URL
 le username dans l'API de login correspond à l'email comme indiqué dans notre CreateUserProfil
+//Version stable avant introduction de la partie feed
