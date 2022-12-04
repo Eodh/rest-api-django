@@ -75,3 +75,6 @@ Create permission set permettant de ne modifier que ses propres données
 connexion du permission set a la view + Token
 //
 Add search profiles feature
+//
+Add login API dans la view
+puis connexion dans l'URL
