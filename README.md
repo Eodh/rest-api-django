@@ -60,3 +60,4 @@ Add PUT, PATCH and DELETE methods in view
 ///
 Create Viewset API
 add URLs avec router fonction
+Add create, retrieve, update, partial_update and destroy functions
