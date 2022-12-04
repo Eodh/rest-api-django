@@ -57,3 +57,6 @@ Effectuer la liaison dans urls.py de l'applicaiton master vers urls.py (qu'on cr
 creation de la liaison entre l urls et la view
 ajout de la méthode POST
 Add PUT, PATCH and DELETE methods in view
+///
+Create Viewset API
+add URLs avec router fonction
