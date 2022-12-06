@@ -82,3 +82,4 @@ le username dans l'API de login correspond à l'email comme indiqué dans notre 
 //Version stable avant introduction de la partie feed
 Ajout d'un nouveau model Item et Migration pour le rentrer dans la base de donnée...
 Add model in django admin interface
+Create Serializer for our profile feed item

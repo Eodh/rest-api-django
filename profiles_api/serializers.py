@@ -34,3 +34,15 @@ class UserProfileSerializer(serializers.ModelSerializer):
             password = validated_data.pop('password')
             instance.set_password(password)
         return super().update(instance, validated_data)
+
+class ProfileFeedItemSerializer(serializers.ModelSerializer):
+    """Serializes profile feed items"""
+
+    class Meta:
+        model = models.ProfileFeedItem
+        # By default Django set an automatic ID in first field IN READ ONLY
+        field = ('id', 'user_profile', 'status_text', 'created_on')
+        # We define in model.py 'user_profile' by owner who create so we put it READ ONLY
+        extra_kwargs = {'user_profile': {'read_only': True}}
+
+
