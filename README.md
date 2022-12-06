@@ -80,5 +80,5 @@ Add login API dans la view
 puis connexion dans l'URL
 le username dans l'API de login correspond à l'email comme indiqué dans notre CreateUserProfil
 //Version stable avant introduction de la partie feed
-Ajout d'un nouveau model Item et Migration pour le rentrer dans la base de donnée
+Ajout d'un nouveau model Item et Migration pour le rentrer dans la base de donnée...
 
