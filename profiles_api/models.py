@@ -2,12 +2,14 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
+from django.conf import settings
 
 
 class UserProfileManager(BaseUserManager):
     """Manager for user profiles"""
 
-    def create_user(self, email, name, password=None): #password=None because we use a hash
+    def create_user(self, email, name, password=None):
+        # password=None because we use a hash
         """create a new user profile"""
         if not email:
             raise ValueError('User must have a user address')
@@ -15,7 +17,8 @@ class UserProfileManager(BaseUserManager):
         email = self.normalize_email(email)
         user = self.model(email=email, name=name)
 
-        user.set_password(password) #Set_password function for native django encryption
+        user.set_password(password)
+        # Set_password function for native django encryption
         user.save(using=self._db)
 
         return user
@@ -54,3 +57,22 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         """Retrieve string representation of our user"""
         return self.email
+
+
+class ProfileFeedItem(models.Model):
+    """Profile status update (create field Items for this model)"""
+    user_profile = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE
+        # on_delete = what happen if a user_profile is deleted
+        # we could replace on_delete by NULL if we want nothing happen
+    )
+    status_text = models.CharField(max_length=255)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """Return the model as a string"""
+        return self.status_text
+    # We have to made migrations after adding a new model to add in database
+
+
