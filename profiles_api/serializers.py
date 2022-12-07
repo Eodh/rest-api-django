@@ -41,7 +41,7 @@ class ProfileFeedItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.ProfileFeedItem
         # By default Django set an automatic ID in first field IN READ ONLY
-        field = ('id', 'user_profile', 'status_text', 'created_on')
+        fields = ('id', 'user_profile', 'status_text', 'created_on')
         # We define in model.py 'user_profile' by owner who create so we put it READ ONLY
         extra_kwargs = {'user_profile': {'read_only': True}}
 
